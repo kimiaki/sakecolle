@@ -176,7 +176,7 @@ def handle_message(event):
     #    output_text = "生年月日を「1980/2/14」のように入力してね！"
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text = "「" + output_text + "」ってお酒あるの？")
+        TextSendMessage(text = output_text)
      )
 
 if __name__ == "__main__":
