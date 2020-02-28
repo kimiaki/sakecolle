@@ -170,6 +170,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_text = event.message.text
+    output_text = "「" + input_text + "」ってお酒があるの？"
     #if checkAlnum(input_text):
     #    output_text = get_pn(input_text)
     #else:
