@@ -49,7 +49,7 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     input_text = event.message.text
-    output_text = "「" + input_text + "」ってお酒があるの？\n美味しそう！！"
+    output_text = "「" + input_text + "」ってお酒があるの？\n美味しそう！！\n\nどういう表現をすると面白くなるか今考えてるから、" + input_text + "を飲みながら待っててね^^"
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text = output_text)
