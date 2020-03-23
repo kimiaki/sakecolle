@@ -411,18 +411,18 @@ def callback():
 # 表現検索イベント発生のテキストリスト
 event_text = ["お酒から選ぶ", "コナンのキャラから選ぶ"]
 
+# 初期設定
+event_flag1 = False
+event_flag2 = False
+intxt = ""
+sake = ""
+konan = ""
+
 # MessageEvent
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     # 入力コメントの取得
     input_text = event.message.text
-    
-    # 初期設定
-    event_flag1 = False
-    event_flag2 = False
-    intxt = ""
-    sake = ""
-    konan = ""
     
     # イベント発生か判断
     if input_text in event_text:
