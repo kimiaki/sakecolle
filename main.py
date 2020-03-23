@@ -68,263 +68,309 @@ for index_sake, rows_sake in df_sake.iterrows():
 sake_json = {
     "type": "carousel",
     "contents": [
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "AKABU F 吟醸酒",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "AKABU F 吟醸酒",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "AKABU F 吟醸酒"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
                 "text": "AKABU F 吟醸酒"
-              }
             }
-          ]
         },
-        "action": {
-          "type": "message",
-          "label": "action",
-          "text": "hello1"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "花の香 桜花 純米大吟醸",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "花の香 桜花 純米大吟醸",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "花の香 桜花 純米大吟醸"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
                 "text": "花の香 桜花 純米大吟醸"
-              }
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "七賢 風凛美山 純米",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "七賢 風凛美山 純米",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "七賢 風凛美山 純米"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
                 "text": "七賢 風凛美山 純米"
-              }
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "東一 山田錦 純米",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "東一 山田錦 純米",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "東一 山田錦 純米"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
                 "text": "東一 山田錦 純米"
-              }
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "二世古 特別純米「吟風」60％\\u3000黄色ラベル",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "二世古 特別純米「吟風」60％\u3000黄色ラベル",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "二世古 特別純米「吟風」60％\u3000黄色ラベル"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
-                "text": "二世古 特別純米「吟風」60％\\u3000黄色ラベル"
-              }
+                "text": "hello1"
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "白瀑 ど辛 純米酒",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "白瀑 ど辛 純米酒",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "白瀑 ど辛 純米酒"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
-                "text": "白瀑 ど辛 純米酒"
-              }
+                "text": "hello1"
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "明鏡止水 本醸造 辛口",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "明鏡止水 本醸造 辛口",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "明鏡止水 本醸造 辛口"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
-                "text": "明鏡止水 本醸造 辛口"
-              }
+                "text": "hello1"
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "三井の寿 +14 大辛口純米吟醸 山田錦",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "三井の寿 +14 大辛口純米吟醸 山田錦",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "三井の寿 +14 大辛口純米吟醸 山田錦"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
-                "text": "三井の寿 +14 大辛口純米吟醸 山田錦"
-              }
+                "text": "hello1"
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "冩樂 純米酒",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "冩樂 純米酒",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "冩樂 純米酒"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
-                "text": "冩樂 純米酒"
-              }
+                "text": "hello1"
             }
-          ]
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "text",
-              "text": "獺祭 純米大吟醸45",
-              "size": "md",
-              "weight": "bold",
-              "style": "normal",
-              "decoration": "none",
-              "position": "relative",
-              "align": "center",
-              "gravity": "bottom",
-              "action": {
+        },
+        {
+            "type": "bubble",
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "獺祭 純米大吟醸45",
+                        "size": "md",
+                        "weight": "bold",
+                        "style": "normal",
+                        "decoration": "none",
+                        "position": "relative",
+                        "align": "center",
+                        "gravity": "bottom",
+                        "action": {
+                            "type": "message",
+                            "label": "action",
+                            "text": "獺祭 純米大吟醸45"
+                        }
+                    }
+                ]
+            },
+            "action": {
                 "type": "message",
                 "label": "action",
-                "text": "獺祭 純米大吟醸45"
-              }
+                "text": "hello1"
             }
-          ]
-        }
-      }
+        }        
     ]
-  }
+}
+
 
 
 
