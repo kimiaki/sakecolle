@@ -17,8 +17,10 @@ import re
 
 # library
 import csv
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
+import pandas
+import numpy
 
 ## 関数：酒名(orキャラ)から最も近いキャラ(or酒名)をdf_sake_konanから取得
 def get_similar_name(df_sake_konan, intxt = "", sake = "", konan = ""):
