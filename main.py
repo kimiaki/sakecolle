@@ -423,7 +423,8 @@ def handle_message(event):
 
     # メッセージ送信
     if input_text == "お酒から選ぶ":
-        line_user_id = os.getenv('LINE_USER_ID', None)
+        profile = line_bot_api.get_profile(event.source.user_id)
+        line_user_ide = profile.user_id
         line_bot_api.push_message(line_user_id, messages=container_obj)
     else:
         line_bot_api.reply_message(
