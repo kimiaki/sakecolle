@@ -458,15 +458,7 @@ def handle_message(event):
         if sake == "":
             output_text = konan + "に最も近いお酒は『" + sake_konan[0] + "』です！"
         elif konan == "":
-            output_text = sake + "に最も近いコナンのキャラクターは『" + sake_konan[1] + "』です！"            
-        else:        
-            # "お酒から選ぶ"と"コナンのキャラから選ぶ"に合わせて、何を調べるか、リストを返してあげる。
-            # 未コーディング
-        
-        # flagのリセット
-        event_flag1 = False
-        event_flag2 = False
-                        
+            output_text = sake + "に最も近いコナンのキャラクターは『" + sake_konan[1] + "』です！"                                    
         
     # 未発生時の処理（オウム返し）
     else:
