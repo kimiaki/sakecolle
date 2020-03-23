@@ -64,6 +64,275 @@ for index_sake, rows_sake in df_sake.iterrows():
 
 #########################ここまで######################################
 
+####################ベタ打ちでFlex Message用のjsonリスト作成###########
+sake_json = {
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "AKABU F 吟醸酒",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "AKABU F 吟醸酒"
+              }
+            }
+          ]
+        },
+        "action": {
+          "type": "message",
+          "label": "action",
+          "text": "hello1"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "花の香 桜花 純米大吟醸",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "花の香 桜花 純米大吟醸"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "七賢 風凛美山 純米",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "七賢 風凛美山 純米"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "東一 山田錦 純米",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "東一 山田錦 純米"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "二世古 特別純米「吟風」60％\\u3000黄色ラベル",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "二世古 特別純米「吟風」60％\\u3000黄色ラベル"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "白瀑 ど辛 純米酒",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "白瀑 ど辛 純米酒"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "明鏡止水 本醸造 辛口",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "明鏡止水 本醸造 辛口"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "三井の寿 +14 大辛口純米吟醸 山田錦",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "三井の寿 +14 大辛口純米吟醸 山田錦"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "冩樂 純米酒",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "冩樂 純米酒"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "text": "獺祭 純米大吟醸45",
+              "size": "md",
+              "weight": "bold",
+              "style": "normal",
+              "decoration": "none",
+              "position": "relative",
+              "align": "center",
+              "gravity": "bottom",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "獺祭 純米大吟醸45"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+
+
+
+
+#########################ここまで######################################
+
+
+
 # 軽量なウェブアプリケーションフレームワーク:Flask
 app = Flask(__name__)
 
@@ -137,21 +406,30 @@ def handle_message(event):
         else:        
             # "お酒から選ぶ"と"コナンのキャラから選ぶ"に合わせて、何を調べるか、リストを返してあげる。
             # 未コーディング
-            output_text = "※実装中（リストを表示）"
             
-            # flagのリセット（※今だけ）
-            event_flag1 = False
-            event_flag2 = False
+            if input_text == "お酒から選ぶ":
+                container_obj = FlexSendMessage.new_from_json_dict(sake_json)
+            
+            else:
+                output_text = "※実装中（リストを表示）"
+
+                # flagのリセット（※今だけ）
+                event_flag1 = False
+                event_flag2 = False
         
     # 未発生時の処理（オウム返し）
     else:
         output_text = "「" + input_text + "」ってお酒があるの？\n美味しそう！！\n\nどういう表現をすると面白くなるか今考えてるから、" + input_text + "を飲みながら待っててね^^"
 
     # メッセージ送信
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text = output_text)
-    )
+    if input_text == "お酒から選ぶ":
+        line_user_id = os.getenv('LINE_USER_ID', None)
+        line_bot_api.push_message(line_user_id, messages=container_obj)
+    else:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text = output_text)
+        )
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT"))
