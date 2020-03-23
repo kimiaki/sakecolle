@@ -134,7 +134,7 @@ def handle_message(event):
             event_flag1 = False
             event_flag2 = False
             
-        elif:        
+        else:        
             # "お酒から選ぶ"と"コナンのキャラから選ぶ"に合わせて、何を調べるか、リストを返してあげる。
             # 未コーディング
             output_text = "※実装中（リストを表示）"
