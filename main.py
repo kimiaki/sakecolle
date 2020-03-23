@@ -8,7 +8,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    FollowEvent, MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage, TemplateSendMessage, ButtonsTemplate, PostbackTemplateAction, MessageTemplateAction, URITemplateAction
+    FollowEvent, MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage, TemplateSendMessage, ButtonsTemplate, PostbackTemplateAction, MessageTemplateAction, URITemplateAction, FlexSendMessage
 )
 import os
 import re
@@ -425,7 +425,11 @@ def handle_message(event):
     if input_text == "お酒から選ぶ":
         profile = line_bot_api.get_profile(event.source.user_id)
         line_user_ide = profile.user_id
-        line_bot_api.push_message(line_user_id, messages=container_obj)
+        line_bot_api.push_message(
+            line_user_id,
+            messages=container_obj
+        )
+        
     else:
         line_bot_api.reply_message(
             event.reply_token,
