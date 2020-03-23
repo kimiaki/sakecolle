@@ -144,7 +144,7 @@ def handle_message(event):
             event_flag2 = False
         
     # 未発生時の処理（オウム返し）
-    elif:
+    else:
         output_text = "「" + input_text + "」ってお酒があるの？\n美味しそう！！\n\nどういう表現をすると面白くなるか今考えてるから、" + input_text + "を飲みながら待っててね^^"
 
     # メッセージ送信
