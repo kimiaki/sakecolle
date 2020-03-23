@@ -215,7 +215,7 @@ sake_json = {
             "action": {
                 "type": "message",
                 "label": "action",
-                "text": "hello1"
+                "text": "二世古 特別純米「吟風」60％\u3000黄色ラベル"
             }
         },
         {
@@ -245,7 +245,7 @@ sake_json = {
             "action": {
                 "type": "message",
                 "label": "action",
-                "text": "hello1"
+                "text": "白瀑 ど辛 純米酒"
             }
         },
         {
@@ -275,7 +275,7 @@ sake_json = {
             "action": {
                 "type": "message",
                 "label": "action",
-                "text": "hello1"
+                "text": "明鏡止水 本醸造 辛口"
             }
         },
         {
@@ -305,7 +305,7 @@ sake_json = {
             "action": {
                 "type": "message",
                 "label": "action",
-                "text": "hello1"
+                "text": "三井の寿 +14 大辛口純米吟醸 山田錦"
             }
         },
         {
@@ -335,7 +335,7 @@ sake_json = {
             "action": {
                 "type": "message",
                 "label": "action",
-                "text": "hello1"
+                "text": "冩樂 純米酒"
             }
         },
         {
@@ -365,7 +365,7 @@ sake_json = {
             "action": {
                 "type": "message",
                 "label": "action",
-                "text": "hello1"
+                "text": "獺祭 純米大吟醸45"
             }
         }        
     ]
@@ -454,7 +454,11 @@ def handle_message(event):
             # 未コーディング
             
             if input_text == "お酒から選ぶ":
-                container_obj = FlexSendMessage.new_from_json_dict(sake_json)
+                #container_obj = FlexSendMessage.new_from_json_dict(sake_json)
+                output = "次のリストから選んで入力してね！\n※テキストをコピーして、1つだけ残して送信してください。\n\nAKABU F 吟醸酒\n花の香 桜花 純米大吟醸\n七賢 風凛美山 純米\n東一 山田錦 純米\n二世古 特別純米「吟風」60％\u3000黄色ラベル\n白瀑 ど辛 純米酒\n明鏡止水 本醸造 辛口\n三井の寿 +14 大辛口純米吟醸 山田錦\n冩樂 純米酒\n獺祭 純米大吟醸45"
+            
+            elif input_text == "コナンのキャラから選ぶ":
+                output = "次のリストから選んで入力してね！\n※テキストをコピーして、1つだけ残して送信してください。\n\nジン\nウォッカ\nベルモット\nバーボン\nキャンティ\nコルン"
             
             else:
                 output_text = "※実装中（リストを表示）"
@@ -468,19 +472,27 @@ def handle_message(event):
         output_text = "「" + input_text + "」ってお酒があるの？\n美味しそう！！\n\nどういう表現をすると面白くなるか今考えてるから、" + input_text + "を飲みながら待っててね^^"
 
     # メッセージ送信
-    if input_text == "お酒から選ぶ":
-        profile = line_bot_api.get_profile(event.source.user_id)
-        line_user_id = profile.user_id
-        line_bot_api.push_message(
-            line_user_id,
-            messages=container_obj
-        )
-        
-    else:
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(text = output_text)
-        )
+
+    #if input_text == "お酒から選ぶ":
+    #    profile = line_bot_api.get_profile(event.source.user_id)
+    #    line_user_id = profile.user_id
+    #    line_bot_api.push_message(
+    #        line_user_id,
+    #        messages=container_obj
+    #    )        
+    #    
+    #else:
+    #    line_bot_api.reply_message(
+    #        event.reply_token,
+    #        TextSendMessage(text = output_text)
+    #    )
+    
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text = output_text)
+    )
+    
+    
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT"))
