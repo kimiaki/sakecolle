@@ -441,9 +441,9 @@ def handle_message(event):
             # 値が入力されたら、対応するコナンのキャラ(orお酒)を取得
             sake_konan = get_similar_name(df_sake_konan, intxt = intxt , sake = sake, konan = sake)
             if sake == "":
-                output = konan + "に最も近いお酒は『" + sake_konan[0] + "』です！"
+                output_text = konan + "に最も近いお酒は『" + sake_konan[0] + "』です！"
             elif konan == "":
-                output = sake + "に最も近いコナンのキャラクターは『" + sake_konan[1] + "』です！"
+                output_text = sake + "に最も近いコナンのキャラクターは『" + sake_konan[1] + "』です！"
             
             # flagのリセット
             event_flag1 = False
@@ -455,10 +455,10 @@ def handle_message(event):
             
             if input_text == "お酒から選ぶ":
                 #container_obj = FlexSendMessage.new_from_json_dict(sake_json)
-                output = "次のリストから選んで入力してね！\n※テキストをコピーして、1つだけ残して送信してください。\n\nAKABU F 吟醸酒\n花の香 桜花 純米大吟醸\n七賢 風凛美山 純米\n東一 山田錦 純米\n二世古 特別純米「吟風」60％\u3000黄色ラベル\n白瀑 ど辛 純米酒\n明鏡止水 本醸造 辛口\n三井の寿 +14 大辛口純米吟醸 山田錦\n冩樂 純米酒\n獺祭 純米大吟醸45"
+                output_text = "次のリストから選んで入力してね！\n※テキストをコピーして、1つだけ残して送信してください。\n\nAKABU F 吟醸酒\n花の香 桜花 純米大吟醸\n七賢 風凛美山 純米\n東一 山田錦 純米\n二世古 特別純米「吟風」60％\u3000黄色ラベル\n白瀑 ど辛 純米酒\n明鏡止水 本醸造 辛口\n三井の寿 +14 大辛口純米吟醸 山田錦\n冩樂 純米酒\n獺祭 純米大吟醸45"
             
             elif input_text == "コナンのキャラから選ぶ":
-                output = "次のリストから選んで入力してね！\n※テキストをコピーして、1つだけ残して送信してください。\n\nジン\nウォッカ\nベルモット\nバーボン\nキャンティ\nコルン"
+                output_text = "次のリストから選んで入力してね！\n※テキストをコピーして、1つだけ残して送信してください。\n\nジン\nウォッカ\nベルモット\nバーボン\nキャンティ\nコルン"
             
             else:
                 output_text = "※実装中（リストを表示）"
