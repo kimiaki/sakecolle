@@ -30,7 +30,9 @@ def get_similar_name(df_sake_konan, intxt = "", sake = "", konan = ""):
         
     elif intxt == "コナンのキャラから選ぶ":
         # キャラからお酒を選択
+        print(konan)
         rows = list(df_sake_konan[konan])
+        print("Check Point 2")
         num = np.argmax(rows)
         sake = list(df_sake_konan.index)[num]
     
