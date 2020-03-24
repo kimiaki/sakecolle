@@ -144,6 +144,8 @@ event_text = ["お酒から選ぶ", "コナンのキャラから選ぶ"]
 
 # MessageEvent
 @handler.add(MessageEvent, message=TextMessage)
+@handler.add(MessageEvent, message=ImageMessage)
+
 def handle_message(event):
     # 入力コメントの取得
     input_text = event.message.text
