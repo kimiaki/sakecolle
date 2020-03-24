@@ -14,7 +14,7 @@ import os
 import re
 
 import matplotlib.pyplot as plt
-%matplotlib notebook
+#%matplotlib notebook
 
 #########################ベタ打ちで「酒→コナンキャラ」を作成##########
 
