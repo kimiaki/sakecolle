@@ -141,10 +141,10 @@ def handle_message(event):
     
     elif event_flag2:        
         if sake == "":
-            sake_konan = get_similar_name(df_sake_konan, intxt = "コナンのキャラから選ぶ" , sake = sake, konan = sake)
+            sake_konan = get_similar_name(df_sake_konan, intxt = "コナンのキャラから選ぶ" , sake = sake, konan = konan)
             output_text = "『" + konan + "』\nに最も近いお酒は…\n\n『" + sake_konan[0] + "』\nです！\n\nいかがでしょう？^^"
         elif konan == "":
-            sake_konan = get_similar_name(df_sake_konan, intxt = "お酒から選ぶ" , sake = sake, konan = sake)
+            sake_konan = get_similar_name(df_sake_konan, intxt = "お酒から選ぶ" , sake = sake, konan = konan)
             output_text = "『" + sake + "』\nに最も近いコナンのキャラクターは…\n\n『" + sake_konan[1] + "』\nです！\n\nいかがでしょう？^^"    
         
     # 未発生時の処理（オウム返し）
