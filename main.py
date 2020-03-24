@@ -25,7 +25,7 @@ def get_similar_name(df_sake_konan, intxt = "", sake = "", konan = ""):
     if intxt == "お酒から選ぶ":
         # お酒からキャラを選択
         rows = list(df_sake_konan.loc[sake])
-        num = np.argmax(rows)
+        num = np.argmin(rows)
         konan = list(df_sake_konan.columns)[num]
         
     elif intxt == "コナンのキャラから選ぶ":
@@ -33,7 +33,7 @@ def get_similar_name(df_sake_konan, intxt = "", sake = "", konan = ""):
         print(konan)
         rows = list(df_sake_konan[konan])
         print("Check Point 2")
-        num = np.argmax(rows)
+        num = np.argmin(rows)
         sake = list(df_sake_konan.index)[num]
     
     else:
